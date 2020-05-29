@@ -64,7 +64,7 @@ def main():
         if (len(pair)!=1):
             for i in range(len(pair)-1):
                 if (int(compute(pair[0],int(pair[i+1])-1,2)) % int(pair[0]) == 1):
-                    #checks if pair[0]^(pair[1]-1) = 1 (mod pair[0])
+                    #checks if pair[0]^(pair[i+1]-1) = 1 (mod pair[0])
                     print(pair[0],pair[i+1])
                     counter = 0
                 if (counter == 10000): #counter to make sure it's running properly
